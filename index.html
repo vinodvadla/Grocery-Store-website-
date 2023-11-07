@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="logo"></div>
+        <nav id="nav">
+          <ul id="ul">
+            <li><a href="#hero" class="link active">Home</a></li>
+            <li><a href="#" class="link">Shop</a></li>
+            <li><a href="#categories" class="link">Categories</a></li>
+            <li>
+              <a href="#" id="cart"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
+        <div class="menu" id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+      <div class="mobile-nav" id="mobile-nav">
+        <div style="display: flex; align-items: center; justify-content: start">
+          <i
+            class="fa-solid fa-xmark"
+            id="close-menu"
+            style="font-size: 30px; padding: 20px"
+          ></i>
+        </div>
+        <ul id="ul">
+          <li><a href="#hero" class="link active">Home</a></li>
+          <li><a href="#" class="link">Shop</a></li>
+          <li><a href="#categories" class="link">Categories</a></li>
+          <li>
+            <a href="#" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- Hero section -->
+      <section class="hero" id="hero">
+        <div class="left">
+          <h1>Let your <span>groceries</span> come to you .</h1>
+          <p>
+            Get fresh groceries online without stepping out make delicious food
+            with freshest ingredients
+          </p>
+          <div class="input-box">
+            <input type="text" id="input" placeholder="Search Categories" />
+            <button class="search-btn" id="btn">Search</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="Images/groceryboy-removebg-preview.png" alt="deliveryboy" />
+        </div>
+      </section>
+      <!-- categories  & Products-->
+      <section class="categories" id="categories">
+        <h1>Categories</h1>
+        <div class="cat" id="cat">
+          <button class="cat-btn">All</button>
+        </div>
+        <div id="products"></div>
+      </section>
+
+      <!-- cart section -->
+      <section class="cart-main" id="cart-main">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Original price</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody id="t-body"></tbody>
+        </table>
+      </section>
+
+      <section class="footer" style="padding-bottom: 30px">
+        <div class="content">
+          <h1>Eco Market</h1>
+          <div style="padding: 20px">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              laborum quis quas repellat dolor, accusantium dicta ratione vel
+              possimus distinctio ad sapiente nobis enim neque! Nam architecto
+              harum voluptate nisi nobis dolorem tenetur debitis ipsa?
+            </p>
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <p style="padding-top: 20px; font-size: 15px">
+            @copy-right 2023 Ecomarket
+          </p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
